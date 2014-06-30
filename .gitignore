@@ -1,0 +1,64 @@
+var shouldWeapon = String("sword");
+var user = prompt("There's a duck in a pond. It likes fish. What do you do? Would you like to feed it, kill it, skin it, buy it, or fight it").toLowerCase();
+
+switch(user) {
+    case 'feed it':
+        var whatHaveFood = prompt("What do you have for food?").toLowerCase();
+            switch(whatHaveFood) {
+                case 'pancakes':
+                    console.log("Great! Ducks love their pancakes!");
+                    break;
+                case 'muffins':
+                    console.log("I'm sorry what? You carry muffins? Ducks LOOOOOOOOOOOVE MUFFINS LIKE OMIGOSH I LOVE MUFFINS MMMM M M MMMM MMM IN MY TUMMY.");
+                    break;
+                case 'dormant spiders':
+                    console.log("You decide not to give them to the duck. They're yours. Nobody gets your dormant spiders.");
+                    break;
+                case 'apple':
+                    console.log("OH BOY I LOVE APPLES -said no duck ever.");
+                    break;
+                default:
+                    console.log("The Duck doesn't like that. He curses you to the pits of hell and walks away.");
+                    break;
+            };
+        break;
+    case 'kill it':
+            var whatHaveWeapon = prompt("What sort of weapon do you have?").toLowerCase();
+            if(shouldWeapon || whatHaveWeapon){
+                console.log("Why Aren't you using a sword? Why are you using a " + String(whatHaveWeapon) + ". They Suck!");
+                }else{
+                    console.log("Good choice. The Duck is vanquished.");
+                }
+        break;
+    case 'skin it':
+            var tempCat = prompt("What temperature is the cat?");
+            if(tempcat > 4){
+                console.log("Don't skin ducks.");
+            }
+            else{
+                console.log("That's a freaking cold cat.");
+            }
+        break;
+    case 'buy it':
+            var buyDuckCost = Math.floor(Math.random()*5 + 1);
+            var buyDucky = ("How much money do you have?");
+            var missingMoney = buyDuckCost - buyDucky;
+            if(buyDucky >= buyDuckCost){
+                console.log("You have bought a duck! congratulations!");
+            }
+            else{
+                console.log("I'm sorry you don't have that much money. You still need" + String(missingMoney) + "$! The duck pulls out a gun and shoots you.");
+        break;
+    case 'fight it':
+        var Smickle = true
+        var Donkey = false
+        if(Donkey || Smickle){
+            console.log("YOU CAN'T FIGHT THE DUCK. THE DUCK IS TOO STRONG");
+        }
+        else{
+            console.log("Ummmm... this is the only accessible answer..... OMEGA GOOD JOB*Cute anime loli voice.*")
+        }
+        break;
+    default:
+        break;
+}
